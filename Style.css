@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.outerContainer{
+    height: 100vh;
+    width:100vw;
+    background-color:black;
+    background-image:url('assets/backgroundimage.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 5;
+   
+    
+
+
+}
+
+.light{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    background-color:black;
+    position: absolute;
+    z-index: 1;
+    top:0px;
+    
+
+}
+nav{
+    position: relative;
+    z-index: 5;
+    display:flex;
+    border: 1px solid red;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(211, 202,202,0.256);
+}
+    
+
+.links>a{
+    text-decoration: none;
+    color:white;
+
+}
+.links{
+    display: flex;
+    gap:30px;
+}
+.logo span{
+color:orangered;
+}
+
+.welcomeText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.welcomeText h1{
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.welcomeText h1 span{
+    color: #ff3c3c;
+}
+
+.welcomeText p{
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+   
+

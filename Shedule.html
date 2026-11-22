@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="icon" href="assets/dumbbell.png">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        nav{
+            display:flex;
+            height: 60px;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(107, 103, 103);
+        }
+
+        .links{
+            display: flex;
+            gap: 30px;
+        }
+
+        .links a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo span{
+            color: orangered;
+        }
+
+        
+        h1{
+            text-align: center;
+            margin: 40px 0;
+            font-size: 36px;
+        }
+
+        
+        .schedule-container{
+            padding: 0 40px 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        table{
+            width: 80%;
+            border-collapse: collapse;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td{
+            padding: 15px;
+            text-align: center;
+        }
+
+        th{
+            background-color: orangered;
+        }
+
+        tr:nth-child(even){
+            background-color: #222;
+        }
+
+        tr:hover{
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav>
+        <div class="logo">
+            VibeFit <span>STUDIO</span>
+        </div>
+
+        <div class="links">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Classes.html">Classes</a>
+            <a href="Shedule.html">Shedule</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+       <div class="SignUp"><a href="SignUp.html"><button>SignUp</button></a></div>
+    </nav>
+
+    
+    <h1>Weekly Schedule</h1>
+
+    
+    <div class="schedule-container">
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Class</th>
+                <th>Time</th>
+                <th>Trainer</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>Strength Training</td>
+                <td>6:00 AM - 7:00 AM</td>
+                <td>Rahul</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>Yoga</td>
+                <td>7:00 AM - 8:00 AM</td>
+                <td>Anjali</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>Cardio</td>
+                <td>5:00 PM -6:00 PM</td>
+                <td>Arjun</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>Zumba</td>
+                <td>6:00 PM - 7:00 PM</td>
+                <td>Pooja</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>Strength Training</td>
+                <td>6:00 AM - 7:00 AM</td>
+                <td>Rahul</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

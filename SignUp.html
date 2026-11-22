@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="assets/dumbbell.png">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        nav{
+            display: flex;
+            height: 60px;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(107, 103, 103);
+        }
+
+        .links{
+            display: flex;
+            gap: 30px;
+        }
+
+        .links a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo span{
+            color: orangered;
+        }
+
+        
+        h1{
+            text-align: center;
+            margin: 40px 0;
+            font-size: 36px;
+        }
+
+        
+        .signup-container{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+        }
+
+        
+        form{
+            width: 420px;
+            background-color: #111;
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        label{
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input, select{
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        button{
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: orangered;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav>
+        <div class="logo">
+            VibeFit <span>STUDIO</span>
+        </div>
+
+        <div class="links">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Classes.html">Classes</a>
+            <a href="Shedule.html">Shedule</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+        <div class="SignUp">
+            <button>SignUp</button>
+        </div>
+    </nav>
+
+    
+    <h1>Join VibeFitStudio</h1>
+
+    
+    <div class="signup-container">
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter your phone number">
+
+            <label>Select Plan</label>
+            <select>
+                <option>Monthly</option>
+                <option>Quarterly</option>
+                <option>Yearly</option>
+            </select>
+
+            <label>Password</label>
+            <input type="password" placeholder="Create password">
+
+            <button>Create Account</button>
+        </form>
+    </div>
+
+</body>
+</html>

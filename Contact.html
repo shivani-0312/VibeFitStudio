@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="assets/dumbbell.png">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* NAVBAR */
+        nav{
+            display: flex;
+            height: 60px;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(107, 103, 103);
+        }
+
+        .links{
+            display: flex;
+            gap: 30px;
+        }
+
+        .links a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo span{
+            color: orangered;
+        }
+
+        
+        h1{
+            text-align: center;
+            margin: 40px 0;
+            font-size: 36px;
+        }
+
+        
+        .info-section{
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+            padding: 0 20px 30px;
+            color: #333;
+        }
+
+        .info-section p{
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        
+        .contact-container{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+        }
+
+        
+        form{
+            width: 400px;
+            background-color: #111;
+            padding: 30px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+
+        input, textarea{
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            margin-bottom: 10px;
+        }
+
+        textarea{
+            resize: none;
+            height: 80px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: orangered;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo">
+            VibeFit <span>STUDIO</span>
+        </div>
+
+        <div class="links">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Classes.html">Classes</a>
+            <a href="Shedule.html">Shedule</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+        <div class="SignUp"><a href="SignUp.html"><button>SignUp</button></a></div>
+    </nav>
+
+    
+    <h1>Contact Us</h1>
+
+    
+    <div class="info-section">
+        <p><strong>VibeFitStudio</strong> is a modern fitness center focused on strength,
+        wellness, and overall health.</p>
+
+        <p>📍 Address: 2nd Floor, Fitness Plaza, Main Road</p>
+        <p>📞 Phone: +91 98765 43210</p>
+        <p>📧 Email: vibefitstudio@gmail.com</p>
+    </div>
+
+    
+    <div class="contact-container">
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Message</label>
+            <textarea placeholder="Enter your message"></textarea>
+
+            <button>Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>

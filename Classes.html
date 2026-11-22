@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="icon" href="assets/dumbbell.png">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            display:flex;
+            border: 1px solid red;
+            height: 60px;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(107, 103, 103);
+        }
+
+        .links{
+            display: flex;
+            gap:30px;
+        }
+
+        .links a{
+            text-decoration: none;
+            color:white;
+        }
+
+        .logo span{
+            color:orangered;
+        }
+
+        h1{
+            text-align: center;
+            margin: 40px 0;
+            font-size: 36px;
+        }
+
+        
+        .ClassesContainer{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 0 40px 40px;
+        }
+
+        .classes{
+            background-color: #111;
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .classes:hover{
+            transform: scale(1.05);
+        }
+
+        .classes h3{
+            color: orangered;
+            margin-bottom: 10px;
+        }
+
+        .classes p{
+            margin-bottom: 15px;
+        }
+
+        .classes button{
+            padding: 8px 20px;
+            border: none;
+            background-color: orangered;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .classes button:hover{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav>
+        <div class="logo">
+            VibeFit <span>STUDIO</span>
+        </div>
+
+        <div class="links">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Classes.html">Classes</a>
+            <a href="Shedule.html">Shedule</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+       <div class="SignUp"><a href="SignUp.html"><button>SignUp</button></a></div>
+    </nav>
+
+    
+    <h1>Our Classes</h1>
+
+    
+    <div class="ClassesContainer">
+        <div class="classes">
+            <h3>Strength Training</h3>
+            <p>Build muscle and increase strength with expert guidance.</p>
+            <button>Join Now</button>
+        </div>
+
+        <div class="classes">
+            <h3>Yoga</h3>
+            <p>Improve flexibility, balance and mental wellness.</p>
+            <button>Join Now</button>
+        </div>
+
+        <div class="classes">
+            <h3>Cardio</h3>
+            <p>Boost stamina and burn calories efficiently.</p>
+            <button>Join Now</button>
+        </div>
+
+        <div class="classes">
+            <h3>Zumba</h3>
+            <p>Fun dance workouts to stay fit and energetic.</p>
+            <button>Join Now</button>
+        </div>
+    </div>
+
+</body>
+</html>
